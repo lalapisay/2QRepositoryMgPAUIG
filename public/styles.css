@@ -1,0 +1,166 @@
+body {background-color: lab(83.81% -10.89 -11.49);}
+
+.footer {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
+    padding: 20px 5%;
+    background: lavender;
+    color: darkorchid;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    box-sizing: border-box;
+    text-align: center;
+    overflow-x: auto;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.footer .col-1,
+.footer .col-2,
+.footer .col-3 {
+    flex: 0 0 33.33%; 
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer h2 {
+    font-family: serif;
+    text-decoration: underline;
+}
+
+.footer p,
+.footer a {
+    font-size: 13px;
+    font-family: Verdana, sans-serif;
+    color: darkorchid;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+
+.footer .social-icons {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.footer .social-icons i {
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .footer {
+        justify-content: flex-start;
+    }
+
+    .footer .col-1,
+    .footer .col-2,
+    .footer .col-3 {
+        flex: 0 0 auto;
+    }
+}
+       
+.footer div
+{
+    text-align: center;
+}
+
+.col-1 a
+{
+    display: block;
+    text-decoration: none;
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.col-2
+{
+    flex-grow: 2;
+}
+            
+.col-2 a
+{
+    display: block;
+    text-decoration: none;
+    color: darkorchid;
+    margin-bottom: 10px;
+}
+
+.footer div h2
+{
+    font-weight: 400;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    letter-spacing: 1px;
+}
+
+.footerBottom
+{
+    background-color: rgb(234, 158, 234);
+    padding: 1px;
+}
+
+.my-paragraph 
+{
+    font-family: Arial;
+    font-size: 16px;
+    color: black;
+}
+
+.navbar
+{
+    margin-left: -50px;
+}
+
+.navbar ul li
+{
+    list-style: none;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.scrolling-text{
+    white-space: nowrap;
+    animation: scroll-left 20s linear infinite;
+}
+
+@keyframes scroll-left{
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li{
+    display:inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: palevioletred;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.5 ease;
+}
+
+ul li a:hover{
+    background-color: cornflowerblue;
+    color: purple;
+}
+
+ul li.active a{
+    background-color: cornflowerblue;
+    color: purple;
+}
